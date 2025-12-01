@@ -1,0 +1,31 @@
+NAME : SHAIKH KASHIF
+UIN : 251P019
+CLASS/DIV: COMPS/C
+#include <stdio.h>
+
+int main() {
+    int A[2][2], B[2][2], S[2][2];
+
+    printf("Enter 4 elements of Matrix A:\n");
+    for (int i = 0; i < 2; i++)
+        for (int j = 0; j < 2; j++)
+            scanf("%d", &A[i][j]);
+
+    printf("Enter 4 elements of Matrix B:\n");
+    for (int i = 0; i < 2; i++)
+        for (int j = 0; j < 2; j++)
+            scanf("%d", &B[i][j]);
+
+    for (int i = 0; i < 2; i++)
+        for (int j = 0; j < 2; j++)
+            S[i][j] = A[i][j] + B[i][j];
+
+    printf("Sum of matrices:\n");
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++)
+            printf("%d ", S[i][j]);
+        printf("\n");
+    }
+
+    return 0;
+}
